@@ -1,0 +1,11 @@
+Feature: Product Purchase
+
+  Scenario: Add product to cart and complete checkout
+    Given User logs into the application
+    When User adds a product to the cart
+    And User opens the cart page
+    Then Cart should display the selected product
+    When User proceeds to checkout
+    And User enters checkout information
+    And User confirms the order
+    Then Order should be successfully placed
